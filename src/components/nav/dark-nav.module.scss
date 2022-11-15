@@ -1,0 +1,52 @@
+@import "../etc/include-media.module.scss";
+@import "../etc/variables.module.scss";
+
+.navbar {
+  position: relative;
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
+
+  .navbar-brand {
+    display: block;
+
+    @include media(">desktop") {
+      display: none;
+    }
+  }
+
+  .navbar-nav {
+    margin-top: sizerem(small);
+    background-color: rgba(255, 255, 255, 0.25);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: inherit;
+    width: inherit;
+  }
+
+  .nav-item {
+    margin-left: sizerem(normal);
+
+    @include media(">desktop") {
+      padding: sizerem(normal);
+    }
+
+  }
+
+  .nav-link {
+    font-weight: weight(regular);
+    font-size: sizerem(normal);
+    text-align: center;
+
+    &.active {
+      font-weight: weight(bold) !important;
+    }
+
+    &:hover {
+      color: white;
+    }
+
+    @include media(">desktop") {
+      font-size: sizerem(large);
+    }
+  }
+}

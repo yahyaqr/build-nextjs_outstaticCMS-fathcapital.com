@@ -3,6 +3,11 @@ import Head from 'next/head'
 const Meta = () => {
   return (
     <Head>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&family=Raleway:wght@300;400;500;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -27,6 +32,7 @@ const Meta = () => {
         color="#000000"
       />
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />

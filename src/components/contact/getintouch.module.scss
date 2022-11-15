@@ -1,0 +1,95 @@
+@import "../etc/include-media.module.scss";
+@import "../etc/variables.module.scss";
+
+.get-in-touch {
+  font-family: 'Montserrat', sans-serif;
+
+  .div-contact {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 10px 10px 20px -10px rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 10px 20px -10px rgba(255, 255, 255, 0.2);
+    border-radius: sizerem(normal);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    @include media(">tablet") {
+      width: 60vw;
+    }
+  }
+
+  .card-body {
+    padding: sizerem(display-1);
+  }
+
+  .title-input-contact {
+    margin-bottom: sizerem(small);
+    font-weight: weight(regular);
+    font-size: sizerem(normal);
+    color: white;
+  }
+
+  .col-12 {
+    margin-bottom: sizerem(large);
+  }
+
+  .input-textarea-contact {
+    background: rgba(255, 255, 255);
+    padding: sizerem(small);
+  }
+
+  .form-control {
+    color: white;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .option {
+    color: black;
+  }
+
+  .btn-submit {
+    width: 100%;
+    color: white;
+    font-weight: weight(medium);
+    background: -o-linear-gradient(top, #3191a1 0%, #218c66 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#3191a1), to(#218c66));
+    background: linear-gradient(180deg, #3191a1 0%, #218c66 100%);
+    padding: sizerem(small);
+    border-style: none;
+    text-align: center;
+
+    &:hover {
+      font-weight: weight(bold);
+      background: -o-linear-gradient(
+        top,
+        rgba(49, 144, 161, 0.8) 0%,
+        rgb(33, 140, 102, 0.8) 100%
+      );
+      background: -webkit-gradient(
+        linear,
+        left top, left bottom,
+        from(rgba(49, 144, 161, 0.8)),
+        to(rgb(33, 140, 102, 0.8))
+      );
+      background: linear-gradient(
+        180deg,
+        rgba(49, 144, 161, 0.8) 0%,
+        rgb(33, 140, 102, 0.8) 100%
+      );
+    }
+
+    @include media(">tablet") {
+      width: 25vw;
+    }
+  }
+
+  @include media(">desktop") {
+    margin-bottom: sizerem(display-3);
+  }
+}

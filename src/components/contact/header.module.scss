@@ -1,0 +1,27 @@
+@import "../etc/include-media.module.scss";
+@import "../etc/variables.module.scss";
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: sizerem(display-1);
+  margin-bottom: sizerem(normal);
+
+  .contact-title {
+    font-weight: weight(bold);
+    font-size: sizerem(largest);
+    text-align: center;
+    color: white;
+
+    @include media(">tablet") {
+      font-size: sizerem(display-1);
+    }
+
+    @include media(">desktop") {
+      font-size: sizerem(display-2);
+    }
+  }
+
+  @include media(">desktop") {
+    margin-top: sizerem(display-3);
+  }
+}
